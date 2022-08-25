@@ -2,17 +2,15 @@
 delpoyed app using heroku: https://lovers-of-movies.herokuapp.com
 
 ### movies
-you can access the list of movies with /movies
-you can access a list of showing movies with /movies?is_showing=true
-and with /movies/movieId you can get specific movies by their ids
-you can access the theaters a movie is playing at, with /movies/movieId/theaters
-you can access a movies reviews with /movies/movieId/reviews
+GET /movies - list of all movies  
+GET /movies?is_showing=true - list of all movies that are showing  
+GET /movies/movieId - a specific movie  
+GET /movies/movieId/theaters - list of theaters a movie is showing at  
+GET /movies/movieId/reviews - a movies reviews
 
 ### theaters
-you can access the list of theaters at /theaters
-and at /theaters/theaterId you can get specific movies by their ids
-
+GET /theater - list of all theaters  
 
 ### reviews
-you can update reviews with a put request to /reviews/reviewId
-or delete a review with the same address
+PUT /reviews/reviewId - update a review  
+DELETE /reviews/reviewId - deletes a review
